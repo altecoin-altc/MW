@@ -5,7 +5,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#include "base58.h"
 #include "script.h"
+#include "script/standard.h"
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 
@@ -313,4 +315,12 @@ std::string CScript::ToString() const
 
     }
     return str;
+}
+
+std::string CScript::ToAddressString () const {
+  CTxDestination address1;
+  ExtractDestination (*this, address1);
+  CBitcoinAddress address2 (address1);
+  
+  return address2.ToString ();          
 }

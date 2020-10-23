@@ -54,11 +54,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000036c78e3d52adc852a690c253a04b60e23b14119076815a2e533ad9c108e"));
+    (0, uint256("0x0000036c78e3d52adc852a690c253a04b60e23b14119076815a2e533ad9c108e"))
+	(438420, uint256("a689d6da0612c100eea0d79a5ee63ebe2c249d3baf767c070abbec082fee58fa"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1576775767, // * UNIX timestamp of last checkpoint block
-    0,		// * total number of transactions between genesis and last checkpoint
+    1603489390, // * UNIX timestamp of last checkpoint block
+    1052378,		// * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -174,6 +175,7 @@ public:
 
         vSeeds.push_back(CDNSSeedData("1", "seed1.masterwin.online"));
 	    vSeeds.push_back(CDNSSeedData("2", "seed2.masterwin.online"));
+		vSeeds.push_back(CDNSSeedData("3", "45.143.138.70"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50); // Start with 'M'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(3, 17); 
@@ -184,7 +186,7 @@ public:
 
 		convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -237,7 +239,7 @@ public:
     });
 
     vMasternodeTiers.push_back ({
-      500000,
+      450000,
       {
         {15000 * COIN, 4 },
         {30000 * COIN, 8 },

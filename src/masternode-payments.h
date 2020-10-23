@@ -215,27 +215,35 @@ public:
     CTxIn vinMasternode;
 
     int nBlockHeight;
-    CScript payee;
+    CScript payee; // REMOVE when MIN_VERSION is at least MIN_PEER_PROTO_VERSION_MNW_VIN
+    CTxIn vinPayee;
     std::vector<unsigned char> vchSig;
 
     CMasternodePaymentWinner()
     {
         nBlockHeight = 0;
         vinMasternode = CTxIn();
-        payee = CScript();
+        payee = CScript(); // REMOVE when MIN_VERSION is at least MIN_PEER_PROTO_VERSION_MNW_VIN
+        vinPayee = CTxIn ();
     }
 
     CMasternodePaymentWinner(CTxIn vinIn)
     {
         nBlockHeight = 0;
         vinMasternode = vinIn;
-        payee = CScript();
+        payee = CScript(); // REMOVE when MIN_VERSION is at least MIN_PEER_PROTO_VERSION_MNW_VIN
+        vinPayee = CTxIn ();
     }
 
     uint256 GetHash()
     {
         CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
-        ss << payee;
+        
+        if (ActiveProtocol () < MIN_PEER_PROTO_VERSION_MNW_VIN)
+            ss << payee; // REMOVE when MIN_VERSION is at least MIN_PEER_PROTO_VERSION_MNW_VIN
+        else
+            ss << vinPayee;
+        
         ss << nBlockHeight;
         ss << vinMasternode.prevout;
 
@@ -243,13 +251,16 @@ public:
     }
     
     unsigned int GetTier ();
+    CScript GetPayeeScript ();
+    unsigned int GetPayeeTier ();
     bool Sign(CKey& keyMasternode, CPubKey& pubKeyMasternode);
     bool IsValid(CNode* pnode, std::string& strError);
     bool SignatureValid();
     void Relay();
 
-    void AddPayee (CScript payeeIn) {
-        payee = payeeIn;
+    void AddPayee (CTxIn vinPayeeIn) {
+        vinPayee = vinPayeeIn;
+        payee = GetPayeeScript (); // REMOVE when MIN_VERSION is at least MIN_PEER_PROTO_VERSION_MNW_VIN
     }
 
 
@@ -260,7 +271,12 @@ public:
     {
         READWRITE(vinMasternode);
         READWRITE(nBlockHeight);
-        READWRITE(payee);
+        
+        if (nVersion < MIN_PEER_PROTO_VERSION_MNW_VIN)
+            READWRITE (payee); // REMOVE when MIN_VERSION is at least MIN_PEER_PROTO_VERSION_MNW_VIN
+        else
+            READWRITE (vinPayee);
+        
         READWRITE(vchSig);
     }
 
@@ -269,7 +285,7 @@ public:
         std::string ret = "";
         ret += vinMasternode.ToString();
         ret += ", " + boost::lexical_cast<std::string>(nBlockHeight);
-        ret += ", " + payee.ToString() + "@" + boost::lexical_cast<std::string>(GetTier ());
+        ret += ", " + GetPayeeScript ().ToString () + "@" + boost::lexical_cast<std::string>(GetPayeeTier ());
         ret += ", " + boost::lexical_cast<std::string>((int)vchSig.size());
         return ret;
     }
@@ -332,10 +348,14 @@ public:
         return true;
     }
     
-    bool CanVote (const COutPoint& outMasternode, unsigned int mnLevel, int nBlockHeight) {
+    bool CanVote (CMasternodePaymentWinner winner) {
+        unsigned int voteForTier = winner.GetPayeeTier ();
+        COutPoint outMasternode = winner.vinMasternode.prevout;
+        int nBlockHeight = winner.nBlockHeight;
+        
         LOCK (cs_mapMasternodePayeeVotes);
         
-        uint256 key = ((outMasternode.hash + outMasternode.n) << 4) + mnLevel;
+        uint256 key = ((outMasternode.hash + outMasternode.n) << 4) + voteForTier;
         
         if (mapMasternodesLastVote.count (key)) {
             if (mapMasternodesLastVote [key] == nBlockHeight)

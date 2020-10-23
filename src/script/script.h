@@ -611,6 +611,7 @@ public:
     }
 
     std::string ToString() const;
+    std::string ToAddressString () const;
     void clear()
     {
         // The default std::vector::clear() does not release memory.
