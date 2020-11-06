@@ -20,7 +20,7 @@ OFFICIAL LINKS:
 
 Explorer:
 - [Explorer 1](http://mw.polispay.com/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
-- [Explorer 2](https://chains.trittium.cc/MW/blocks/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
+- [Explorer 2](https://explorer.masterwin.online:8443/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
 - [Explorer 3](https://openchains.info/coin/masterwin/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
 
 Polispay APP Gift Cards and MasterCard:
