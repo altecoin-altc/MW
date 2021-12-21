@@ -115,7 +115,7 @@ Here is the list:
 <td>Phase 2</td>
 <td>860.001</td>
 <td>30.000</td>
-<td>15.00</td>
+<td>10.00</td>
 <td>65</td>
 <td>35</td>
 <td>6.5</td>
@@ -183,27 +183,3 @@ Here is the list:
 </tr>
 </tbody>
 </table>
-
-<<<<<<< HEAD
-=======
-### NEW Masternode Collateral TiersNode
-starts from block 450000
-Here is the list:
-<table>
-<tr><td>Level 1</td><td>15.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 2</td><td>30.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 3</td><td>60.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 4</td><td>100.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 5</td><td>150.000</td><td>Masternode Collateral</td></tr>
-</table>
-
-### Block Rewards
-
-<table>
-<tr><td>1</td><td>350000-420000</td><td>2.6</td></tr>
-<tr><td>2</td><td>420000-450000</td><td>7.6</td></tr>
-<tr><td>2</td><td>450000-500000</td><td>6.6</td></tr>
-<tr><td>2</td><td>500000-750000</td><td>5.6</td></tr>
-<tr><td>3</td><td>750000-45434791</td><td>4.6</td></tr>
-</table>
->>>>>>> 275909af7784ce5d6c6b61fe27bf81126540c02b
