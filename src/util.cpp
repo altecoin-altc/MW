@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2019-2020 The MasterWin developers
+// Copyright (c) 2019-2022 The MasterWin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -532,7 +532,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             strHeader += rpc_user;
             strHeader += "\nrpcpassword=";
             strHeader += rpc_passwd;
-			strHeader += "\nrpcport=33556\ntxindex=1\naddnode=seed1.masterwin.online\naddnode=seed2.masterwin.online\nstaking=1\n";
+			strHeader += "\nrpcport=33556\naddnode=172.245.91.49\naddnode=[2a01:4f8:212:2b15::99]\naddnode=[2a01:4f8:212:2b15::100]\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
         }

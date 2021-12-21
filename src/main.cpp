@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2019-2020 The MasterWin developers
+// Copyright (c) 2019-2022 The MasterWin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1979,8 +1979,29 @@ int64_t GetBlockValue(int nHeight)
 	else if (nHeight <= 750000 && nHeight > 500000) {
 		nSubsidy = 5.6 * COIN;
 	}
-	else if (nHeight <= 45434791 && nHeight > 750000) {
+	else if (nHeight <= 860000 && nHeight > 750000) {
 		nSubsidy = 4.6 * COIN;
+	}
+	else if (nHeight <= 880000 && nHeight > 860000) {
+		nSubsidy = 10 * COIN;
+	}
+	else if (nHeight <= 900000 && nHeight > 880000) {
+		nSubsidy = 15 * COIN;
+	}
+	else if (nHeight <= 925000 && nHeight > 900000) {
+		nSubsidy = 30 * COIN;
+	}
+	else if (nHeight <= 950000 && nHeight > 925000) {
+		nSubsidy = 60 * COIN;
+	}
+	else if (nHeight <= 975000 && nHeight > 950000) {
+		nSubsidy = 75 * COIN;
+	}
+	else if (nHeight <= 1000000 && nHeight > 975000) {
+		nSubsidy = 100 * COIN;
+	}
+	else if (nHeight <= 45434791 && nHeight > 1000000) {
+		nSubsidy = 50 * COIN;
 	}
 	else {
 		nSubsidy = 0 * COIN;
@@ -1990,20 +2011,11 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZMWStake)
 {
-	int64_t ret = 0;
-
-	if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-		if (nHeight < 200)
-			return 0;
-	}
-
-	if (nHeight <= Params().LAST_POW_BLOCK()) {
-		return 0;
-	}
-	else {
-		ret = blockValue;  //100%;
-	}
-	return ret;
+    int64_t ret = 0;
+    if (nHeight >= Params().LAST_POW_BLOCK()) {
+        return blockValue * 65 / 100;
+    }
+    return ret;
 }
 
 int64_t GetMasternodePayment (int nHeight, unsigned int mnLevel, int64_t blockValue, int nMasternodeCount, bool isZMWStake) {
@@ -6578,12 +6590,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
 	// SPORK_14 was used for 70920 (v3.1.0+)
-	if (IsSporkActive (SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-		return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
-	// SPORK_15 is used for 70919 (v3.0.1+)
-	// if (IsSporkActive (SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+	// if (IsSporkActive (SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
 	// 	return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+
+	// SPORK_15 is used for 70921 (v4.0.0)
+	   if (IsSporkActive (SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+	 	return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
 	return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }

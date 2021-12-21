@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2019-2020 The MasterWin developers
+// Copyright (c) 2019-2022 The MasterWin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,11 +55,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x0000036c78e3d52adc852a690c253a04b60e23b14119076815a2e533ad9c108e"))
-	(438420, uint256("a689d6da0612c100eea0d79a5ee63ebe2c249d3baf767c070abbec082fee58fa"));
+    (438420, uint256("0xa689d6da0612c100eea0d79a5ee63ebe2c249d3baf767c070abbec082fee58fa"))
+    (824190, uint256("0x6d416e291dbdd62e76196e9e27ba75a01628d0789ca8e35f4d61bc2cbb38dafe"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1603489390, // * UNIX timestamp of last checkpoint block
-    1052378,		// * total number of transactions between genesis and last checkpoint
+    1638997459, // * UNIX timestamp of last checkpoint block
+    1836391,		// * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -123,11 +124,12 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // MW: 1 day
+        nTargetTimespan = 30 * 60;
         nTargetSpacing = 1.5 * 60;  // MW: 1,5 minute
         nMaturity = 41;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 31000000 * COIN;
+        nMaxMoneyOut = 100000000 * COIN;
+
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 100;
@@ -221,7 +223,7 @@ public:
         };
         
     vMasternodeTiers.push_back ({
-      nLastPOWBlock,
+      1,
       {
         {   4000 * COIN, 1 }
       }
@@ -246,6 +248,125 @@ public:
         {60000 * COIN, 18 },
         {100000 * COIN, 28 },
         {150000 * COIN, 42 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      840000,
+      {
+        { 15000 * COIN, 65 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      860000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 65 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      880000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 65 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      900000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 65 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      925000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 65 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      950000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 65 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      975000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 65 },
+        { 200000 * COIN, 0 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      1000000,
+      {
+        { 15000 * COIN, 0 },
+        { 30000 * COIN, 0 },
+        { 60000 * COIN, 0 },
+        { 100000 * COIN, 0 },
+        { 125000 * COIN, 0 },
+        { 150000 * COIN, 0 },
+        { 175000 * COIN, 0 },
+        { 200000 * COIN, 65 }
+      }
+    });
+
+    vMasternodeTiers.push_back ({
+      1000100,
+      {
+        { 200000 * COIN, 65 }
       }
     });
   }

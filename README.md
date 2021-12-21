@@ -20,28 +20,21 @@ OFFICIAL LINKS:
 
 Explorer:
 - [Explorer 1](http://mw.polispay.com/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
-- [Explorer 2](https://chains.trittium.cc/MW/blocks/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
-- [Explorer 3](https://openchains.info/coin/masterwin/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
+- [Explorer 2](https://explorer.masterwin.online/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
+- [Explorer 3](https://ihostmn.com/explorerinfo.php?coin=MW) ![Alt text](https://masterwin.online/github/703836700631367720.png? "Explorer") 
 
 Polispay APP Gift Cards and MasterCard:
 - [Polispay](https://www.polispay.com/) ![Alt text](https://masterwin.online/github/703836702539644979.png? "Polispay") 
 - [Android apps](https://play.google.com/store/apps/details?id=com.polispay.copay) ![Alt text](https://masterwin.online/github/goggle.png? "Polispay Android") 
 
 Masternode Sharing | Hosting:
-- [Cryptoselfmade](http://cryptoselfmade.com/?ref=1076cYhXemp7z1) ![Alt text](https://masterwin.online/github/703836690187550811.png? "Cryptoselfmade") 
 - [StackOfStake](https://stackofstake.com/) ![Alt text](https://masterwin.online/github/704692407933075487.png? "StackOfStake") 
-- [Polisnodes](https://platform.polisnodes.io/coins) ![Alt text](https://masterwin.online/github/704249243941994516.png? "Polisnodes") 
-- [Gentarium](https://gtmcoin.io/) ![Alt text](https://masterwin.online/github/704694259458244608.png? "Gentarium") 
-- [Masternode Community](http://masternode.community) ![Alt text](https://masterwin.online/github/703836701533011999.png? "Masternode Community") 
-- [Millenium Club](https://millenniumclub.ca) ![Alt text](https://masterwin.online/github/703836696772477018.png? "Millenium Club") 
 - [Ihostmn](https://ihostmn.com) ![Alt text](https://masterwin.online/github/703836700631367720.png? "Ihostmn") 
-- [Trittium](https://node.trittium.cc) ![Alt text](https://masterwin.online/github/703836698022510612.png? "Trittium")  
 - [Flits mobile app](https://flitsnode.app/download) ![Alt text](https://masterwin.online/github/703836687188361237.png? "Flits") 
 - [crypos](https://crypos.io/) ![Alt text](https://masterwin.online/github/703836702011162654.png? "crypos") 
 
 MASTERNODE ROI INFO:
 - [Masternode.buzz](https://coins.masternode.buzz/MW/) ![Alt text](https://masterwin.online/github/703836670554013707.png? "Masternode.buzz")
-- [mnodes.pro](https://mnodes.pro/masterwin-masternode-information.php) ![Alt text](https://masterwin.online/github/703836703978160130.png? "mnodes.pro")
 - [Nodecheck](https://nodecheck.io/currency/MW) ![Alt text](https://masterwin.online/github/703836700899541074.png? "Nodecheck")
 - [Pecuniaplatform](https://pecuniaplatform.io/coin-details/Masterwin) ![Alt text](https://masterwin.online/github/p.png? "Pecuniaplatform")
 - [Masternodes.biz](http://masternodes.biz/coindetail.php?c=MW) ![Alt text](https://masterwin.online/github/703836697829441638.png? "Masternodes.biz")
@@ -77,44 +70,112 @@ COIN info:
 <tr><td>Coin Name:</td><td>Masterwin</td></tr>
 <tr><td>Ticker:</td><td>MW</td></tr>
 <tr><td>Coin Type:</td><td>MN/POS</td></tr>
-<tr><td>Block Reward:</td><td>100% MN</td></tr>
+<tr><td>Block Reward:</td><td>65% MN</td><td>35% POS</td></tr>
 <tr><td>Block Time:</td><td>90 Sec</td></tr>                 
-<tr><td>Maximum Supply:</td><td>31.000.000 MW</td></tr>
+<tr><td>Maximum Supply:</td><td>100.000.000 MW</td></tr>
 <tr><td>Coin Lock:</td><td>11.000.000 MW</td></tr>
-<tr><td>Coin Maturity:</td><td>61 Blocks</td></tr>
-<tr><td>Masternode Collateral:</td><td>4.000 MW</td></tr>		
+<tr><td>Coin Maturity:</td><td>61 Blocks</td></tr>		
 <tr><td>Network Port:</td><td>33555</td></tr>
 <tr><td>RPC Port:</td><td>33556</td></tr>
 </table>
 
-### Masternode Collateral TiersNode
-starts from block 420000
+### NEW From Tiers Masternode to Phases MasterNode Collateral 
+starts from block 840000
 Here is the list:
 <table>
-<tr><td>Level 1</td><td>4.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 2</td><td>15.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 3</td><td>30.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 4</td><td>60.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 5</td><td>100.000</td><td>Masternode Collateral</td></tr>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Block</th>
+<th>Collateral</th>
+<th>Block Reward</th>
+<th>MN Reward %</th>
+<th>Staking Reward %</th>
+<th>MN Reward</th>
+<th>Staker Reward</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>840.001</td>
+<td>15.000</td>
+<td>4.6</td>
+<td>65</td>
+<td>35</td>
+<td>3</td>
+<td>1.6</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>860.001</td>
+<td>30.000</td>
+<td>15.00</td>
+<td>65</td>
+<td>35</td>
+<td>6.5</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>880.001</td>
+<td>60.000</td>
+<td>15.00</td>
+<td>65</td>
+<td>35</td>
+<td>9.75</td>
+<td>5.25</td>
+</tr>
+<tr>
+<td>Phase 4</td>
+<td>900.001</td>
+<td>100.000</td>
+<td>30</td>
+<td>65</td>
+<td>35</td>
+<td>19.5</td>
+<td>10.5</td>
+</tr>
+<tr>
+<td>Phase 5</td>
+<td>925.001</td>
+<td>125.000</td>
+<td>60</td>
+<td>65</td>
+<td>35</td>
+<td>39</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Phase 6</td>
+<td>950.001</td>
+<td>150.000</td>
+<td>75</td>
+<td>65</td>
+<td>35</td>
+<td>48.75</td>
+<td>26.25</td>
+</tr>
+<tr>
+<td>Phase 7</td>
+<td>975.001</td>
+<td>175.000</td>
+<td>100</td>
+<td>65</td>
+<td>35</td>
+<td>65</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Phase 8</td>
+<td>1.000.001</td>
+<td>200.000</td>
+<td>50</td>
+<td>65</td>
+<td>35</td>
+<td>32.5</td>
+<td>17.5</td>
+</tr>
+</tbody>
 </table>
 
-### NEW Masternode Collateral TiersNode
-starts from block 450000
-Here is the list:
-<table>
-<tr><td>Level 1</td><td>15.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 2</td><td>30.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 3</td><td>60.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 4</td><td>100.000</td><td>Masternode Collateral</td></tr>
-<tr><td>Level 5</td><td>150.000</td><td>Masternode Collateral</td></tr>
-</table>
-
-### Block Rewards
-
-<table>
-<tr><td>1</td><td>350000-420000</td><td>2.6</td></tr>
-<tr><td>2</td><td>420000-450000</td><td>7.6</td></tr>
-<tr><td>2</td><td>450000-500000</td><td>6.6</td></tr>
-<tr><td>2</td><td>500000-750000</td><td>5.6</td></tr>
-<tr><td>3</td><td>750000-45434791</td><td>4.6</td></tr>
-</table>
