@@ -4,7 +4,12 @@ Exchange:
 - [Graviex MW/LTC](https://graviex.net/markets/mwltc) ![Alt text](https://masterwin.online/github/703836702308827146.png? "Graviex")
 - [Graviex MW/DOGE](https://graviex.net/markets/mwdoge) ![Alt text](https://masterwin.online/github/703836702308827146.png? "Graviex")
 - [SouthXchange MW/BTC](https://www.southxchange.com/Market/Book/MW/BTC) ![Alt text](https://masterwin.online/github/703836695946068019.png? "SouthXchange")
-- [Midas MW/BTC](https://midas.investments/exchange/MW/BTC) ![Alt text](https://masterwin.online/github/703836697741230091.png? "Midas")
+- [HypecoinExchange MW/USDT](https://www.hypecoinexchange.com/exchange/MW-USDT?type=pro) ![Alt text](https://i.imgur.com/3JZ5TYj.png? "HypecoinExchange")
+- [HypecoinExchange MW/BTC](https://www.hypecoinexchange.com/exchange/MW-BTC?type=pro) ![Alt text](https://i.imgur.com/3JZ5TYj.png? "HypecoinExchange")
+- [HypecoinExchange MW/BNB](https://www.hypecoinexchange.com/exchange/MW-BNB?type=pro) ![Alt text](https://i.imgur.com/3JZ5TYj.png? "HypecoinExchange")
+- [HypecoinExchange MW/BUSD](https://www.hypecoinexchange.com/exchange/MW-BUSD?type=pro) ![Alt text](https://i.imgur.com/3JZ5TYj.png? "HypecoinExchange")
+- [HypecoinExchange MW/ETH](https://www.hypecoinexchange.com/exchange/MW-ETH?type=pro) ![Alt text](https://i.imgur.com/3JZ5TYj.png? "HypecoinExchange")
+- [HypecoinExchange MW/TRX](https://www.hypecoinexchange.com/exchange/MW-TRX?type=pro) ![Alt text](https://i.imgur.com/3JZ5TYj.png? "HypecoinExchange")
 - [DelionDEX MW/BTC](https://dex.delion.online/market/DELION.MW_DELION.BTC) ![Alt text](https://masterwin.online/github/703836701151199242.png? "DelionDEX")
 - [DelionDEX MW/DLN](https://dex.delion.online/market/DELION.MW_DELION.DLN) ![Alt text](https://masterwin.online/github/703836701151199242.png? "DelionDEX")
 - [DelionDEX MW/DOGE](https://dex.delion.online/market/DELION.MW_DELION.DOGE) ![Alt text](https://masterwin.online/github/703836701151199242.png? "DelionDEX")
@@ -20,13 +25,8 @@ OFFICIAL LINKS:
 
 Explorer:
 - [Explorer 1](http://mw.polispay.com/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
-<<<<<<< HEAD
 - [Explorer 2](https://explorer.masterwin.online/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
 - [Explorer 3](https://ihostmn.com/explorerinfo.php?coin=MW) ![Alt text](https://masterwin.online/github/703836700631367720.png? "Explorer") 
-=======
-- [Explorer 2](https://explorer.masterwin.online:8443/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
-- [Explorer 3](https://openchains.info/coin/masterwin/) ![Alt text](https://masterwin.online/github/697546382197915653.png? "Explorer") 
->>>>>>> 275909af7784ce5d6c6b61fe27bf81126540c02b
 
 Polispay APP Gift Cards and MasterCard:
 - [Polispay](https://www.polispay.com/) ![Alt text](https://masterwin.online/github/703836702539644979.png? "Polispay") 
