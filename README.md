@@ -115,7 +115,7 @@ Here is the list:
 <td>Phase 2</td>
 <td>860.001</td>
 <td>30.000</td>
-<td>10.00</td>
+<td>10</td>
 <td>65</td>
 <td>35</td>
 <td>6.5</td>
@@ -125,7 +125,7 @@ Here is the list:
 <td>Phase 3</td>
 <td>880.001</td>
 <td>60.000</td>
-<td>15.00</td>
+<td>15</td>
 <td>65</td>
 <td>35</td>
 <td>9.75</td>
