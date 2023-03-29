@@ -1224,9 +1224,9 @@ UniValue relaymasternodebroadcast(const UniValue& params, bool fHelp)
     return strprintf("Masternode broadcast sent (service %s, vin %s)", mnb.addr.ToString(), mnb.vin.ToString());
 }
 
-UniValue getcollateral(const JSONRPCRequest& request)
+UniValue getcollateral(const UniValue& params, bool fHelp)
 {
-    if (request.fHelp || (request.params.size() != 0))
+    if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "getcollateral\n"
             "\nPrint the amount of coins currently required as a masternode collateral\n"
