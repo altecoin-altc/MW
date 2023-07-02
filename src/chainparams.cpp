@@ -56,13 +56,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x0000036c78e3d52adc852a690c253a04b60e23b14119076815a2e533ad9c108e"))
     (438420, uint256("0xa689d6da0612c100eea0d79a5ee63ebe2c249d3baf767c070abbec082fee58fa"))
-    (824190, uint256("0x6d416e291dbdd62e76196e9e27ba75a01628d0789ca8e35f4d61bc2cbb38dafe"));
+    (824190, uint256("0x6d416e291dbdd62e76196e9e27ba75a01628d0789ca8e35f4d61bc2cbb38dafe"))
+    (1350000, uint256("0xcb256e01a631770a2f6b63ca7c32668ca1c6076801d398a834f424c51fa3347d"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1638997459, // * UNIX timestamp of last checkpoint block
-    1836391,		// * total number of transactions between genesis and last checkpoint
+    1687865214, // * UNIX timestamp of last checkpoint block
+    2929157,		// * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2000        // * estimated number of transactions per day after checkpoint
+    3000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -177,7 +178,9 @@ public:
 
         vSeeds.push_back(CDNSSeedData("1", "seed1.masterwin.online"));
 	    vSeeds.push_back(CDNSSeedData("2", "seed2.masterwin.online"));
-		vSeeds.push_back(CDNSSeedData("3", "45.143.138.70"));
+        vSeeds.push_back(CDNSSeedData("3", "seed3.masterwin.online"));
+	    vSeeds.push_back(CDNSSeedData("4", "seed4.masterwin.online"));
+	    vSeeds.push_back(CDNSSeedData("5", "seed5.masterwin.online"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50); // Start with 'M'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(3, 17); 

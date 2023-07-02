@@ -532,7 +532,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             strHeader += rpc_user;
             strHeader += "\nrpcpassword=";
             strHeader += rpc_passwd;
-			strHeader += "\nrpcport=33556\naddnode=172.245.91.49\naddnode=[2a01:4f8:212:2b15::99]\naddnode=[2a01:4f8:212:2b15::100]\n";
+			strHeader += "\nrpcport=33556\naddnode=seed1.masterwin.online\naddnode=seed2.masterwin.online\naddnode=seed3.masterwin.online\naddnode=seed4.masterwin.online\naddnode=seed5.masterwin.online\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
         }
