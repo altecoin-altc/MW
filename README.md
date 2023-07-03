@@ -1,18 +1,11 @@
 Exchange:
-- [Crex24 MW/BTC](https://crex24.com/exchange/MW-BTC) ![Alt text](https://masterwin.online/github/702868454700482590.png? "Crex24")
 - [Graviex MW/BTC](https://graviex.net/markets/mwbtc) ![Alt text](https://masterwin.online/github/703836702308827146.png? "Graviex")
 - [Graviex MW/LTC](https://graviex.net/markets/mwltc) ![Alt text](https://masterwin.online/github/703836702308827146.png? "Graviex")
 - [Graviex MW/DOGE](https://graviex.net/markets/mwdoge) ![Alt text](https://masterwin.online/github/703836702308827146.png? "Graviex")
 - [SouthXchange MW/BTC](https://www.southxchange.com/Market/Book/MW/BTC) ![Alt text](https://masterwin.online/github/703836695946068019.png? "SouthXchange")
-- [HypecoinExchange MW/USDT](https://www.hypecoinexchange.com/exchange/MW-USDT?type=pro) ![Alt text](https://i.imgur.com/YUn5fqd.png? "HypecoinExchange")
-- [HypecoinExchange MW/BTC](https://www.hypecoinexchange.com/exchange/MW-BTC?type=pro) ![Alt text](https://i.imgur.com/YUn5fqd.png? "HypecoinExchange")
-- [HypecoinExchange MW/BNB](https://www.hypecoinexchange.com/exchange/MW-BNB?type=pro) ![Alt text](https://i.imgur.com/YUn5fqd.png? "HypecoinExchange")
-- [HypecoinExchange MW/BUSD](https://www.hypecoinexchange.com/exchange/MW-BUSD?type=pro) ![Alt text](https://i.imgur.com/YUn5fqd.png? "HypecoinExchange")
-- [HypecoinExchange MW/ETH](https://www.hypecoinexchange.com/exchange/MW-ETH?type=pro) ![Alt text](https://i.imgur.com/YUn5fqd.png? "HypecoinExchange")
-- [HypecoinExchange MW/TRX](https://www.hypecoinexchange.com/exchange/MW-TRX?type=pro) ![Alt text](https://i.imgur.com/YUn5fqd.png? "HypecoinExchange")
-- [DelionDEX MW/BTC](https://dex.delion.online/market/DELION.MW_DELION.BTC) ![Alt text](https://masterwin.online/github/703836701151199242.png? "DelionDEX")
-- [DelionDEX MW/DLN](https://dex.delion.online/market/DELION.MW_DELION.DLN) ![Alt text](https://masterwin.online/github/703836701151199242.png? "DelionDEX")
-- [DelionDEX MW/DOGE](https://dex.delion.online/market/DELION.MW_DELION.DOGE) ![Alt text](https://masterwin.online/github/703836701151199242.png? "DelionDEX")
+- [Freiexchange MW/BTC](https://freiexchange.com/market/MW/BTC)
+- [Xeggex MW/BTC](https://graviex.net/markets/mwbtc)
+- [Xeggex MW/USDT](https://graviex.net/markets/mwltc)
 
 OFFICIAL LINKS:
 - [Official Website](https://masterwin.online/) ![Alt text](https://masterwin.online/github/701893309475455177.png? "Official Website")
